@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadith Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="hadith-image" src="./images/hadith-book.svg" alt="" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">Random hadith</a>
+        <a href="./books.html">Hadith books</a>
+        <a href="#">Search for hadith</a>
+        <a href="./about.html">About</a>
+      </div>
+      <div class="hamburger-menu">
+        <img src="./images/burger-bar.png" alt="Menu" />
+      </div>
+    </nav>
+    <div class="card-container">
+      <div class="card">
+        <p class="advice-number amiri-bold">حَدِيث شَرِيْف</p>
+        <blockquote class="advice-text" id="random-hadith"></blockquote>
+        <div class="divider">
+          <span class="pause-icon desktop"
+            ><img src="./images/pattern-divider-desktop.svg" alt=""
+          /></span>
+          <span class="pause-icon mobile"
+            ><img src="./images/pattern-divider-mobile.svg" alt=""
+          /></span>
+        </div>
+        <button class="dice-button">
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">
+        Made with ❤️ by
+        <a
+          href="https://github.com/AmrKhaledAK47"
+          target="_blank"
+          class="footer-link"
+          >Amr Khaled</a
+        >
+        and
+        <a
+          href="https://github.com/O-Abdelaziz"
+          target="_blank"
+          class="footer-link"
+          >Omar Abdelaziz</a
+        >
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

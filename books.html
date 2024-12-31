@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadith Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="hadith-image" src="./images/hadith-book.svg" alt="" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">Random hadith</a>
+        <a href="./books.html">Hadith books</a>
+        <a href="#">Search for hadith</a>
+        <a href="./about.html">About</a>
+      </div>
+      <div class="hamburger-menu">
+        <img src="./images/burger-bar.png" alt="Menu" />
+      </div>
+    </nav>
+    <div class="books-container">
+      <div class="book">
+        <a href="./book.html?book=abu-dawud">
+          <img class="book-image" src="./images/abu-dawud.jpg" alt="" />
+          <h2 class="book-title">Abu Dawud</h2>
+          <p class="book-description">Total Hadiths: 4419</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=ahmad">
+          <img class="book-image" src="./images/ahmed.jpg" alt="" />
+          <h2 class="book-title">Ahmad</h2>
+          <p class="book-description">Total Hadiths: 4305</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=bukhari">
+          <img class="book-image" src="./images/bukhari.jpg" alt="" />
+          <h2 class="book-title">Bukhari</h2>
+          <p class="book-description">Total Hadiths: 6638</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=darimi">
+          <img class="book-image" src="./images/darimi.jpg" alt="" />
+          <h2 class="book-title">Darimi</h2>
+          <p class="book-description">Total Hadiths: 2949</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=ibnu-majah">
+          <img class="book-image" src="./images/ibnu-majah.jpg" alt="" />
+          <h2 class="book-title">Ibnu Majah</h2>
+          <p class="book-description">Total Hadiths: 4285</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=malik">
+          <img class="book-image" src="./images/malik.jpg" alt="" />
+          <h2 class="book-title">Malik</h2>
+          <p class="book-description">Total Hadiths: 1587</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=muslim">
+          <img class="book-image" src="./images/book-1.jpeg" alt="" />
+          <h2 class="book-title">Muslim</h2>
+          <p class="book-description">Total Hadiths: 4930</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=nasai">
+          <img class="book-image" src="./images/nasai.jpeg" alt="" />
+          <h2 class="book-title">Nasai</h2>
+          <p class="book-description">Total Hadiths: 5364</p>
+        </a>
+      </div>
+      <div class="book">
+        <a href="./book.html?book=tirmidzi">
+          <img class="book-image" src="./images/tirmidzi.jpg" alt="" />
+          <h2 class="book-title">Tirmidzi</h2>
+          <p class="book-description">Total Hadiths: 3625</p>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">
+        Made with ❤️ by
+        <a
+          href="https://github.com/AmrKhaledAK47"
+          target="_blank"
+          class="footer-link"
+          >Amr Khaled</a
+        >
+        and
+        <a
+          href="https://github.com/O-Abdelaziz"
+          target="_blank"
+          class="footer-link"
+          >Omar Abdelaziz</a
+        >
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
